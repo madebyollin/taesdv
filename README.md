@@ -10,7 +10,7 @@ Since TAESDV efficiently supports both parallel and sequential frame decoding, T
 
 | Original Video | TAESD Encode, TAESD Decode | TAESD Encode, TAESDV Decode |
 | -------------- | -------------------------------------- | ---------------------------------------- |
-| <video playsinline autoplay loop muted src="https://github.com/user-attachments/assets/9eb1bba3-3bb5-4430-b0f8-76e176b91e4b"></video>  | <video playsinline autoplay loop muted src="https://github.com/user-attachments/assets/1330d79b-49ad-494d-b48e-ac54e4363fa2"></video> | <video playsinline autoplay loop muted src="https://github.com/user-attachments/assets/f4ef0531-e2c4-48c9-a7a0-eda6f62b99b8"></video> |
+| ![test_video mp4](https://github.com/user-attachments/assets/99bbfeb7-bd7a-4d20-8f35-d328d18a383f) | ![test_video mp4 reconstructed_taesd mp4](https://github.com/user-attachments/assets/80a100ee-6f92-41e9-81a0-258b55cadf53) | ![test_video mp4 reconstructed mp4](https://github.com/user-attachments/assets/c8c24f44-e4e7-42ff-8ce5-962cdf8014ce)|
 
 > [!NOTE]
 > Lots of TODOs still:
