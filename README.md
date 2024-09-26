@@ -5,8 +5,8 @@
 TAESDV is a Tiny AutoEncoder for Stable Diffusion Videos. TAESDV can decode sequences of Stable Diffusion latents into continuous videos with much smoother results than single-frame [TAESD](https://github.com/madebyollin/taesd) (but within the same tiny runtime budget).
 
 Since TAESDV efficiently supports both parallel and sequential frame decoding, TAESDV should be useful for:
-1. Fast batched previewing for video-generation systems like [SVD](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid)
-2. Fast realtime decoding for interactive v2v systems like [StreamDiffusion](https://github.com/cumulo-autumn/StreamDiffusion)
+1. Fast batched previewing for video-generation systems like [SVD](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid) or [AnimateLCM](https://animatelcm.github.io).
+2. Fast realtime decoding for interactive v2v systems like [StreamDiffusion](https://github.com/cumulo-autumn/StreamDiffusion).
 
 | Original Video | TAESD Encode, TAESD Decode | TAESD Encode, TAESDV Decode |
 | -------------- | -------------------------------------- | ---------------------------------------- |
@@ -14,12 +14,18 @@ Since TAESDV efficiently supports both parallel and sequential frame decoding, T
 
 > [!NOTE]
 > Lots of TODOs still:
-> 1. Add SVD or similar example notebook
-> 2. Change repo example videos from roundtrip to gen decode (the TAESD encoder hasn't changed lol)
-> 3. Add performance metrics (it's like the same)
-> 4. Add StreamDiffusion or other v2v example
-> 5. Get a less smudgy checkpoint :)
-> 6. Add to Diffusers
+>
+> 1. Add StreamDiffusion or other v2v example
+> 2. Add performance metrics (it's like the same as TAESD)
+> 3. Get a less smudgy checkpoint :)
+> 4. Better / more example videos
+> 5. Add to Diffusers somehow?
+
+## How can I use TAESDV for previewing generated videos?
+
+See the [AnimateLCM previewing example](./examples/TAESDV_Previewing_During_Generation.ipynb), which visualizes a TAESDV preview after each generation step.
+
+
 
 ## How does TAESDV work?
 
