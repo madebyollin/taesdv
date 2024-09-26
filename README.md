@@ -25,7 +25,7 @@ Since TAESDV efficiently supports both parallel and sequential frame decoding, T
 
 See the [AnimateLCM previewing example](./examples/TAESDV_Previewing_During_Generation.ipynb), which visualizes a TAESDV preview after each generation step.
 
-
+<video src="https://github.com/user-attachments/assets/2fa29dd7-1f85-493b-9c9f-dd5337ab3337"/>
 
 ## How does TAESDV work?
 
