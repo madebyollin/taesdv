@@ -10,16 +10,16 @@ Since TAESDV efficiently supports both parallel and sequential frame decoding, T
 
 | Original Video | TAESD Encode, TAESD Decode | TAESD Encode, TAESDV Decode |
 | -------------- | -------------------------------------- | ---------------------------------------- |
-| ![test_video mp4](https://github.com/user-attachments/assets/99bbfeb7-bd7a-4d20-8f35-d328d18a383f) | ![test_video mp4 reconstructed_taesd mp4](https://github.com/user-attachments/assets/80a100ee-6f92-41e9-81a0-258b55cadf53) | ![test_video mp4 reconstructed mp4](https://github.com/user-attachments/assets/c8c24f44-e4e7-42ff-8ce5-962cdf8014ce)|
+| ![test_video mp4](./images/test_video.mp4.gif) | ![test_video mp4 reconstructed_taesd mp4](./images/test_video.mp4.reconstructed_taesd.mp4.gif) | ![test_video mp4 reconstructed mp4](images/test_video.mp4.reconstructed.mp4.gif) |
 
 > [!NOTE]
 > Lots of TODOs still:
 >
 > 1. Add StreamDiffusion or other v2v example
 > 2. Add performance metrics (it's like the same as TAESD)
-> 3. Get a less smudgy checkpoint :)
-> 4. Better / more example videos
-> 5. Add to Diffusers somehow?
+> 3. Better / more example videos
+> 4. Add to Diffusers somehow?
+> 5. Even better checkpoint?
 
 ## How can I use TAESDV for previewing generated videos?
 
