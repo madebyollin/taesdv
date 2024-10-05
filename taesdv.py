@@ -29,7 +29,6 @@ class MemBlock(nn.Module):
     def __init__(self, n_in, n_out):
         super().__init__()
         self.conv = nn.Sequential(conv(n_in * 2, n_out), nn.ReLU(), conv(n_out, n_out), nn.ReLU(), conv(n_out, n_out))
-        self.conv[-1].bias.data.fill_(0.1)
         self.skip = nn.Conv2d(n_in, n_out, 1, bias=False) if n_in != n_out else nn.Identity()
         self.act = nn.ReLU()
     def forward(self, x, mem):
